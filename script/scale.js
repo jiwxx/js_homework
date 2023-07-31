@@ -1,5 +1,5 @@
-let height = 0;
-let weight = 0;
+// let height = 0;
+// let weight = 0;
 let total = 0;
 const m = 100;
 const x = 0.9;
@@ -10,7 +10,12 @@ const text = document.querySelector('.answer')
 console.log(userHeight,userWeight,normal_w,text)
 
 normal_w.addEventListener('click',function(){
-    total = height + weight - m * x;
-    console.log (total)
-    text.innerHTML=`적정체중은 ${total}kg 이며 ${weight-total}kg 초과되셨습니다.`
+    // total = height + weight - m * x;
+    // console.log (total)
+    // text.innerHTML=`적정체중은 ${total}kg 이며 ${weight-total}kg 초과되셨습니다.`
+    let height = Number(userHeight.value)
+    let weight = Number(userWeight.value)
+    total = (height - m) * x;
+    console.log (height,weight)
+    text.innerHTML = `적정체중은 ${total}kg 이며 ${total-weight}kg 초과되셨습니다.`
 })
