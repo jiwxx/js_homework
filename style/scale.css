@@ -1,0 +1,23 @@
+body {
+    width:1200px;
+    margin:0 auto;
+}
+body > * {letter-spacing: 0.02em;
+    padding:50px 0;
+    text-align: center;
+}
+h1 {
+    font-size: 50px;
+}
+.h_w_a {
+    /* display:flex; flex-flow: column nowrap; */
+}
+.h_w_a span {}
+.h_w_a input {}
+.h_w_a .height {}
+.h_w_a .weight {}
+.h_w_a #btn {
+    display: inline-block;
+    width:100px;
+}
+.h_w_a .answer {}
